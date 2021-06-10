@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <router-view></router-view>
+    <!-- router-view 가 렌더링이 되지 않음 -->
     <!-- <UserList/> -->
   </div>
 </template>
