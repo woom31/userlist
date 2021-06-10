@@ -26,7 +26,6 @@ export default {
     }
   },
   mounted(){
-    // ajax with axios
     axios.get('https://dummyapi.io/data/api/user?limit=10' , {
       'headers' : {
         "app-id" : this.appId

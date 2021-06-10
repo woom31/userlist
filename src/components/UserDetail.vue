@@ -5,6 +5,13 @@
     </div>
     <div class="userWapper">
         <img :src="info.picture">
+        <div class="userName">{{ info.firstName }} {{ info.lastName }}</div>
+        <div class="userGender">Gender : {{ info.gender }}</div>
+        <div class="userBirth">Birth : {{ info.dateOfBirth }}</div>
+        <div class="userEmail">E-mail : {{ info.email }}</div>
+        <div class="userPhone">Phone : {{ info.phone }}</div>
+        <div class="userCountry">Country : {{ info.location.country }}</div>
+        <div class="userRegiter">Register : {{ info.registerDate }}</div>
     </div>
   </div>
 </template>
@@ -26,7 +33,7 @@ export default {
   },
   mounted(){
     // ajax with axios
-    axios.get('https://dummyapi.io/data/api/user/' + this.id , {
+    axios.get(`https://dummyapi.io/data/api/user/${this.id}` , {
       'headers' : {
         "app-id" : this.appId
       }
