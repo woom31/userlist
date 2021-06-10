@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="users">
         <router-link :to="`/user/${item.id}`">
             <div class="userBox">
                 <img :src="item.picture" class="userImg" alt="user image">
@@ -25,5 +25,12 @@ export default {
 </script>
 
 <style scoped>
-
+.users {
+    display: inline-block;
+    width: 248px;
+    text-align: center;
+    height: 300px;
+    margin: 24px 12px;
+    background-color: #ccc;
+}
 </style>
